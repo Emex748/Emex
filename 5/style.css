@@ -1,0 +1,91 @@
+/* Reset and layout centering */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2ebd5; /* Matching the soft greenish/light background */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Scoreboard Card */
+.scoreboard {
+    background-color: #1a233d; /* Dark navy blue from the image */
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 60px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Team Section layouts */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.team-title {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Digital Display Screens */
+.score-display {
+    background-color: #0c0f1d; /* Deep black/blue screen background */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: #ff4757; /* Bright digital red neon */
+    font-family: 'Orbitron', sans-serif; /* Seven-segment style font */
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.6); /* LED Glow effect */
+}
+
+/* Action Buttons Grid */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.score-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 48px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Subtle hover animations */
+.score-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.score-btn:active {
+    transform: translateY(0);
+}
